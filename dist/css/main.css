@@ -186,3 +186,5 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+    main#home i {
+      color: #fff; }
