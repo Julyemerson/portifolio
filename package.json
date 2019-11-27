@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Responsive Portfolio",
   "main": "index.js",
+  "homepage": "https://julyemerson.github.io/portifolio/",
   "dependencies": {
     "node-sass": "^4.13.0"
   },
@@ -11,7 +12,7 @@
   },
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "publish": "./node_modules/.bin/gh-pages -d dist/"
+    "publish": "gh-pages -d dist"
   },
   "author": "Julyemerson Leonizio",
   "license": "MIT"
