@@ -287,7 +287,9 @@ main {
     .menu-branding .portrait {
       background: url("../img/me-portrait.jpg");
       width: 150px;
-      height: 150px; }
+      height: 150px;
+      display: block;
+      margin: auto; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
@@ -297,6 +299,6 @@ main {
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 25vh;
-    font-size: 60px; }
+    font-size: 50px; }
   .projects {
     grid-template-columns: 1fr; } }
