@@ -3,10 +3,24 @@ const $menu = document.querySelector(".menu");
 const $menuNav = document.querySelector(".menu-nav");
 const $menuBranding = document.querySelector(".menu-branding");
 const $navItems = document.querySelectorAll(".nav-item");
+const $openModalBtn = document.querySelector(".modalBtn");
+const $modal = document.querySelector("#simpleModal");
+const $closeModalBtn = document.querySelector(".closeBtn");
 
 let showMenu = false;
 
 $menuBtn.addEventListener("click", toggleMenu, false);
+$openModalBtn.addEventListener("click", openModal, false);
+$closeModalBtn.addEventListener("click", closeModal, false);
+
+
+function openModal() {
+  $modal.style.display = "block";
+}
+
+function closeModal() {
+  $modal.style.display = "none";
+}
 
 function toggleMenu() {
   if (!showMenu) {
