@@ -66,7 +66,9 @@ jspm_packages/
 # Ignore all local history of files
 .history
 
-#userand passwords 
+#user and passwords 
 .env
+
+.gitignore
 
 # End of https://www.gitignore.io/api/node,visualstudiocode

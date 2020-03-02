@@ -1,83 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/dist/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/956f6a492d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contato</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="/dist/css/main.css" />
-  <script src="https://kit.fontawesome.com/956f6a492d.js" crossorigin="anonymous"></script>
-  <title>Contato</title>
-</head>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">Sobre Mim</a>
+          </li>
+          <li class="nav-item">
+            <a href="work.html" class="nav-link current">Meus Trabalhos</a>
+          </li>
+          <li class="nav-item current">
+            <a href="contact.html" class="nav-link">Contatos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="contact">
+      <h1 class="lg-heading">Contatos:</h1>
+      <h2 class="sm-heading text-secondary">
+        Você pode me encontrar por aqui:
+      </h2>
 
-<body>
-  <header>
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
-    <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
+      <div class="boxes">
+        <div class="">
+          <span class="text-secondary far fa-envelope"> </span>
+          <a href="mailto:jb.leonizio@gmail.com">e-mail </a>
+        </div>
+        <div class="">
+          <span class="text-secondary fab fa-whatsapp"> </span>
+          <a
+            target="new_page"
+            href="https://api.whatsapp.com/send?phone=558499851-9000"
+          >
+            (84) 99851-9000</a
+          >
+        </div>
+        <div class="">
+          <span class="text-secondary fab fa-instagram"> </span>
+          <a target="new_page" href="https://www.instagram.com/julyemerson/">
+            @julyemerson</a
+          >
+        </div>
+        <div class="">
+          <span class="text-secondary fab fa-linkedin"> </span>
+          <a
+            target="new_page"
+            href="https://www.linkedin.com/in/julyemerson-leonizio/"
+            >Julyemerson Leonizio</a
+          >
+        </div>
+        <div id="modal" class="modalBtn">
+          <span class="text-secondary far fa-paper-plane"></span>
+          Contato
+        </div>
       </div>
-      <ul class="menu-nav">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html" class="nav-link">Sobre Mim</a>
-        </li>
-        <li class="nav-item">
-          <a href="work.html" class="nav-link current">Meus Trabalhos</a>
-        </li>
-        <li class="nav-item current">
-          <a href="contact.html" class="nav-link">Contatos</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main id="contact">
-    <h1 class="lg-heading">Contatos:</h1>
-    <h2 class="sm-heading text-secondary">
-      Você pode me encontrar por aqui:
-    </h2>
-
-    <div class="boxes">
-      <div class="">
-        <span class="text-secondary far fa-envelope"> </span>
-        <a href="mailto:jb.leonizio@gmail.com">e-mail </a>
+      <div id="simpleModal" class="modal">
+        <div class="modal-content">
+          <div class="modalHeader">
+            <span class="closeBtn">&times;</span>
+            <h2>Formulário de contato</h2>
+          </div>
+          <form>
+            <span>Nome:</span>
+            <input type="text" class="form-name" />
+            e-mail:
+            <input type="text" class="form-email" />
+            Assunto:
+            <input type="text" class="form-subject" />
+            Mensagem:
+            <input type="text" class="message" />
+          </form>
+        </div>
       </div>
-      <div class="">
-        <span class="text-secondary fab fa-whatsapp"> </span>
-        <a target="new_page" href="https://api.whatsapp.com/send?phone=558499851-9000">
-          (84) 99851-9000</a>
-      </div>
-      <div class="">
-        <span class="text-secondary fab fa-instagram"> </span>
-        <a target="new_page" href="https://www.instagram.com/julyemerson/">
-          @julyemerson</a>
-      </div>
-      <div class="">
-        <span class="text-secondary fab fa-linkedin"> </span>
-        <a target="new_page" href="https://www.linkedin.com/in/julyemerson-leonizio/">Julyemerson Leonizio</a>
-      </div>
-      <div id="modal" class="modalBtn">
-        <span class="text-secondary far fa-paper-plane"></span>
-        Contato
-      </div>
-    </div>
-    <div id="simpleModal" class="modal">
-      <div class="modal-content">
-        <span class="closeBtn">&times;</span>
-        <p>Hello... I am a modal</p>
-      </div>
-    </div>
-  </main>
-  <footer id="main-footer">
-    Copyright &copy; 2020
-  </footer>
-  <script src="js/main.js"></script>
-</body>
-
+    </main>
+    <footer id="main-footer">
+      Copyright &copy; 2020
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>
