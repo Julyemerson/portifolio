@@ -1,3 +1,5 @@
+import { sendMail } from "./mail";
+
 const $menuBtn = document.querySelector(".menu-btn");
 const $menu = document.querySelector(".menu");
 const $menuNav = document.querySelector(".menu-nav");
@@ -12,7 +14,6 @@ let showMenu = false;
 $menuBtn.addEventListener("click", toggleMenu, false);
 $openModalBtn.addEventListener("click", openModal, false);
 $closeModalBtn.addEventListener("click", closeModal, false);
-
 
 function openModal() {
   $modal.style.display = "block";
@@ -47,3 +48,4 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+sendMail("jb.leonizio@gmail.com", "teste tem que da certo");

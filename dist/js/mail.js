@@ -2,34 +2,32 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 const env = require("dotenv").config();
 const app = express();
-const port = 3000;
+const to = "jb.leonizio@gmail.com";
+const text = "teste de envio vis THIS e THAT alaaje";
 
-const user = process.env.USER_EMAIL;
-const pass = process.env.USER_PASSWORD;
+const user = process.env.EMAIL_USER;
+const pass = process.env.PASSWORD_USER;
 
-app.get("/", (req, res) => res.send("Hello World"));
+//app.get("/", (req, res) => res.send("Hello World"));
 
-app.get("/send", (req, res) => {
+//app.get("/send", (req, res) => {
+function sendMail() {
   const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
+    host: "smtp.office365.com",
     port: 587,
     auth: { user, pass }
   });
 
-  transporter
-    .sendMail({
-      from: user,
-      to: "thalyta.apuhena@gmail.com",
-      replyTo: "stefanini.julyemerson@grupofleury.com.br",
-      subject: "Teste de envio de email via sistema ",
-      text: "Recebemos sua mensagem e em breve entraremos em contato"
-    })
-    .then(info => {
-      res.send(info);
-    })
-    .catch(error => {
-      res.send(error);
-    });
-});
+  transporter.sendMail({
+    from: user,
+    to: to,
+    subject: "Email enviado dia 11/03 as 13:55 ",
+    text: text
+  });
+}
+//});
 
-app.listen(port, () => console.log(`example listening on port ${port}`));
+exports.sendMail = sendMail;
+
+//app.listen(port, () => console.log(`example listening on port ${port}`));
+console.log(user, pass);
