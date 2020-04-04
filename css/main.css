@@ -217,6 +217,37 @@ main {
       .boxes div:hover span {
         color: #000; }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation-name: modalopen;
+  animation-duration: 1s; }
+
+.modal-content {
+  background-color: #444;
+  margin: 20% auto;
+  padding: 20px;
+  width: 50%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17); }
+
+.closeBtn {
+  color: #eece1a;
+  float: right;
+  font-size: 30px; }
+  .closeBtn:hover,
+  .closeBtn .closeBtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.8s ease-out; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
@@ -302,3 +333,9 @@ main {
     font-size: 50px; }
   .projects {
     grid-template-columns: 1fr; } }
+
+@keyframes modalopen {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
