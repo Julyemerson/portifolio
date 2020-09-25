@@ -46,4 +46,3 @@ function toggleMenu() {
     showMenu = false;
   }
 }
-sendMail('jb.leonizio@gmail.com', 'teste tem que da certo');
